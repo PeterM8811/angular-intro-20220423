@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Todo } from './model/todo';
 
 @Component({
   selector: 'app-todos',
@@ -7,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodosComponent implements OnInit {
 
+  public todos: Todo[] = [];
+  public text:string = 'type something';
+
+  public clear () {
+    this.text = '';
+  }
+  
   constructor() { }
 
   ngOnInit(): void {
