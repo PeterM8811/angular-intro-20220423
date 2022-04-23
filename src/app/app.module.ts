@@ -6,9 +6,10 @@ import { HelloComponent } from './hello/hello.component';
 import { CounterComponent } from './counter/counter.component';
 import { TodosComponent } from './todos/todos.component';
 import { FormsModule } from '@angular/forms';
+import { TodoComponent } from './todos/todo/todo.component';
 
 @NgModule({
-  declarations: [AppComponent, HelloComponent, CounterComponent, TodosComponent],
+  declarations: [AppComponent, HelloComponent, CounterComponent, TodosComponent, TodoComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
