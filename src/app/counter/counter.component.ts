@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CounterComponent implements OnInit {
 
+  public value = 0
+  public text = ' HI '
+
+
+  increment() {
+    this.value++;
+  }
+
+  decrement() {
+    this.value--;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
