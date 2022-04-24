@@ -1,0 +1,6 @@
+<div *ngFor="let user of users">
+    <img [src]="user.avatar" />
+    <span>{{ user.first_name}} {{ user.last_name}}</span>
+    <span appHighlight>{{user.email}}</span>
+</div>
+<pre><code>{{ users | json}}</code></pre>
